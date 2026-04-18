@@ -1,0 +1,54 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+
+# --- Virtual Environments ---
+venv/
+.venv/
+env/
+.env_local
+
+# --- Environment Variables (CRITICAL) ---
+# Never commit your API keys!
+.env
+.env.*
+
+# --- Database (SQLite) ---
+*.db
+*.sqlite
+*.sqlite3
+# Specific DBs from your code
+jobcompanion.db
+psychiatrist.db
+agent_memory.db
+
+# --- Agno / Phidata Agent Memory ---
+# Persisted agent sessions and storage should not be committed
+agent_storage/
+agent_memory/
+playground/
+
+# --- Qdrant & Vector Stores ---
+# Local vector store data if running Qdrant locally/embedded
+qdrant_storage/
+fastembed_cache/
+fast_embedding_cache/
+
+# --- IDE Settings ---
+.vscode/
+.idea/
+
+# --- Uploads & Static Media ---
+# As defined in your main.py creation logic
+uploads/
+static/
+
+# --- Logs ---
+*.log
+logs/
+
+# --- Distribution / Packaging ---
+build/
+dist/
+*.egg-info/
